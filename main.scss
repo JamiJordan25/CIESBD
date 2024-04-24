@@ -1,0 +1,2001 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&family=Poppins:wght@300;400;600;800&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --DarkColor: rgb(36, 57, 91);
+  --SemiDarkColor: rgb(52, 76, 128);
+  --LightColor: rgb(74, 99, 172);
+  --bgColor: rgb(249, 248, 248);
+  --greyColor: rgb(216, 215, 215);
+  --darkGreyColor: rgb(204, 203, 203);
+  --whiteColor: rgb(255, 255, 255);
+  --headerHeight: 3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bgColor);
+}
+
+// BELOW IS REUSABLE CSS
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+iframe {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.sidePadding {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+p {
+  font-size: 17px;
+  color: var(--DarkColor);
+}
+
+.contentImg {
+  width: 90px;
+}
+
+.cta {
+  border: 2px solid var(--whiteColor);
+  padding: 0.5rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  border-radius: 3rem;
+}
+
+.rightArrow {
+  color: var(--whiteColor);
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  transform: translateY(2px);
+}
+
+// ENDS
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 100;
+  width: 100%;
+
+  .logo {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    border: 2px solid var(--whiteColor);
+    background: var(--whiteColor);
+    border-radius: 3rem;
+    transition: 0.2s;
+    a {
+      color: var(--DarkColor);
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    .rightArrow {
+      color: var(--DarkColor);
+    }
+  }
+
+  .btn:hover {
+    background: transparent;
+    border: 2px solid var(--whiteColor);
+  }
+  .btn:hover a,
+  .btn:hover .rightArrow {
+    color: var(--whiteColor);
+  }
+
+  .menuIcon {
+    color: var(--whiteColor);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navBar {
+    position: fixed;
+    top: -500%;
+    left: 0;
+    right: 0;
+    background: var(--LightColor);
+    transition: 0.4s;
+    padding: 2rem 2rem 1rem;
+    border-bottom: 2px solid var(--whiteColor);
+    z-index: 1000;
+  }
+
+  .closeIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: var(--whiteColor);
+  }
+
+  .navItem {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .navLink {
+    color: var(--whiteColor);
+    font-size: 1.1rem;
+    position: relative;
+  }
+
+  .navLink::before {
+    position: absolute;
+    content: "";
+    background: var(--whiteColor);
+    height: 3px;
+    border-radius: 5px;
+    width: 0%;
+    bottom: -5px;
+    transition: 0.3s;
+  }
+
+  .navLink:hover {
+    font-weight: bold;
+  }
+
+  .navLink:hover::before {
+    width: 50%;
+  }
+
+  .navFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    margin: auto;
+
+    .navFooterText {
+      color: var(--whiteColor);
+      height: 100%;
+      padding: 0.5rem 2rem 0;
+      border-top: 1px solid var(--whiteColor);
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.show {
+  top: 0;
+}
+
+// HOME CSS STARTS ====================================
+
+.home {
+  height: 100vh;
+  width: 100%;
+
+  .bannerImg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .slideText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 80%;
+
+    .homeTitle {
+      color: var(--whiteColor);
+      font-size: 2rem;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-weight: 700;
+      line-height: 2.5rem;
+    }
+
+    .subTitle {
+      color: var(--whiteColor);
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      padding-bottom: 1.5rem;
+      font-size: 0.9rem;
+      display: block;
+      justify-content: center;
+      margin: auto;
+    }
+
+    .bannerBtn {
+      margin: auto;
+      transition: 0.3s;
+      .aboutBtn {
+        color: var(--whiteColor);
+      }
+    }
+    .bannerBtn:hover {
+      background: rgba(255, 255, 255, 0.527);
+    }
+  }
+
+  .swiper-pagination {
+    margin-bottom: 3rem;
+  }
+}
+
+.headerActive {
+  background: var(--LightColor);
+  transition: 0.4s;
+}
+
+// Intro Section CSS==================================================
+
+.introSection {
+  padding: 2rem 0;
+
+  .content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .contentImg {
+      justify-self: center;
+      align-self: center;
+      margin-bottom: 1rem;
+    }
+
+    .contentTitle {
+      display: block;
+      font-size: 25px;
+      font-weight: 800;
+      color: var(--DarkColor);
+      font-family: "Montserrat", sans-serif;
+      padding-bottom: 0.6rem;
+    }
+
+    p {
+      font-size: 17px;
+      padding-bottom: 0.6rem;
+    }
+
+    .serviceBtn {
+      background: var(--DarkColor);
+      border: none;
+      outline: none;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+
+      a {
+        color: var(--whiteColor);
+      }
+    }
+
+    .serviceBtn:before {
+      content: "";
+      position: absolute;
+      background: var(--whiteColor);
+      width: 50%;
+      height: 100%;
+      border-radius: 3rem;
+      left: -50%;
+      bottom: 0;
+      transition: left 0.4s;
+    }
+    .serviceBtn:after {
+      content: "";
+      position: absolute;
+      background: var(--SemiDarkColor);
+      width: 50%;
+      height: 100%;
+      border-radius: 3rem;
+      transition: left 0.6s;
+      left: -50%;
+      bottom: 0;
+    }
+
+    .serviceBtn:hover::before,
+    .serviceBtn:hover::after {
+      left: 100%;
+    }
+    .serviceBtn:hover {
+      background: var(--LightColor);
+    }
+  }
+}
+
+// About Us Section CSS==================================================>
+
+.aboutText {
+  .title {
+    font-size: 1.4rem;
+    color: var(--DarkColor);
+    padding-bottom: 0.5rem;
+    width: max-content;
+    position: relative;
+  }
+
+  .title::after {
+    content: "";
+    position: absolute;
+    background: var(--DarkColor);
+    height: 10px;
+    width: 90px;
+    right: -110px;
+    top: 12px;
+  }
+
+  p {
+    padding-bottom: 0.5rem;
+  }
+
+  .cta {
+    border: 2px solid var(--DarkColor);
+    transition: 0.3s;
+    a,
+    .rightArrow {
+      color: var(--DarkColor);
+    }
+  }
+
+  .cta:hover {
+    background: var(--DarkColor);
+  }
+  .cta:hover a,
+  .cta:hover .rightArrow {
+    color: var(--whiteColor);
+  }
+}
+
+.aboutImg {
+  position: relative;
+  width: 100%;
+  // max-width: 400px;
+  height: 200px;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.6s;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+
+  .years {
+    position: absolute;
+    z-index: 10;
+    background: var(--bgColor);
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    right: -10px;
+    border-bottom-left-radius: 2rem;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    span {
+      color: var(--DarkColor);
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--whiteColor);
+    background: var(--DarkColor);
+    padding: 0 10px;
+  }
+
+  h4 {
+    color: var(--DarkColor);
+    line-height: 1.2rem;
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+}
+
+// Service section CSS------------------------------------
+
+.serviceContainer {
+  display: grid;
+  gap: 2rem;
+  margin: 0 1rem;
+
+  .textContent {
+    position: relative;
+    width: 100%;
+    // max-width: 568px;
+    background: linear-gradient(
+        rgba(19, 35, 56, 0.855),
+        rgba(19, 35, 56, 0.855)
+      ),
+      url(./img/img12.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 1.5rem;
+
+    .serviceHeader {
+      
+      padding: 1rem 2rem;
+      background: var(--whiteColor);
+      width: max-content;
+      position: absolute;
+      left: 0;
+      border-radius: 0 3rem 3rem 0;
+      align-items: center;
+      justify-content: center;
+
+      .subTitle {
+        color: var(--DarkColor);
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .Title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--DarkColor);
+        line-height: 1rem;
+      }
+    }
+
+    .serviceBody {
+      margin-top: 5.5rem;
+
+      p {
+        color: var(--whiteColor);
+        line-height: 1.5rem;
+      }
+
+      h3 {
+        color: var(--whiteColor);
+        padding: 1.5rem 0 0.5rem;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        white-space: wrap;
+        width: 100%;
+        // max-width: 568px;
+        margin: 1.5rem 0;
+
+        span {
+          line-height: 1.3rem;
+          color: var(--whiteColor);
+        }
+
+        .checked {
+          margin-right: 0.5rem;
+          color: var(--whiteColor);
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .serviceBtn {
+      position: relative;
+      z-index: 2;
+      a {
+        color: var(--whiteColor);
+      }
+    }
+
+    .serviceBtn::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: var(--whiteColor);
+      border-radius: 3rem;
+      z-index: -1;
+      left: 0;
+      transition: 0.4s;
+    }
+
+    .serviceBtn:hover a,
+    .serviceBtn:hover .rightArrow {
+      color: var(--DarkColor);
+    }
+
+    .serviceBtn:hover::before {
+      width: 100%;
+    }
+  }
+
+  .servicesSides {
+    display: grid;
+    gap: 1rem;
+    .imgDiv {
+      height: 200px;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+        transition: 0.6s;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .sideTop,
+    .sideBottom {
+      width: 100%;
+      background: var(--greyColor);
+      padding-bottom: 1rem;
+      border-radius: 2px;
+      overflow: hidden;
+
+      p {
+        padding: 2rem 2rem 1rem;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+
+        .dash:nth-child(1) {
+          background: var(--DarkColor);
+          height: 5px;
+          width: 20px;
+          margin-left: 2rem;
+        }
+        .dash:nth-child(2) {
+          background: var(--LightColor);
+          height: 5px;
+          width: 20px;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// PROJECT SECTION CSS==================================>
+
+.project {
+  margin: 0 1rem;
+  .container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+
+    .projectIntro {
+      text-align: center;
+      padding-bottom: 2rem;
+
+      .subTitle {
+        color: var(--SemiDarkColor);
+        font-size: 1.1rem;
+      }
+
+      .title {
+        color: var(--DarkColor);
+        font-size: 20px;
+      }
+    }
+
+    .projectContent {
+      .detailsBox {
+        position: relative;
+        overflow: hidden;
+        .imgBox {
+          height: 200px;
+          overflow: hidden;
+          img {
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+            transition: 5s;
+          }
+        }
+        .imgDetails {
+          position: absolute;
+          z-index: 2;
+          background: var(--whiteColor);
+          width: max-content;
+          left: -201px;
+          bottom: 0;
+          padding: 0.7rem;
+          border-top-right-radius: 3rem;
+          border-bottom: 3px solid var(--DarkColor);
+          transition: 0.5s;
+
+          .detailsTitle {
+            color: var(--DarkColor);
+            line-height: 1.5rem;
+            font-weight: 600;
+          }
+
+          p {
+            width: 100%;
+            max-width: 200px;
+            font-size: 13px;
+            line-height: 1.1rem;
+          }
+
+          .calender {
+            display: flex;
+            align-items: center;
+            margin-top: 0.3rem;
+
+            .calenderIcon {
+              margin-right: 0.7rem;
+              color: var(--DarkColor);
+              font-weight: 600;
+            }
+          }
+
+          .arrow {
+            position: absolute;
+            right: -8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            top: 50%;
+            background: var(--DarkColor);
+            height: 25px;
+            width: 25px;
+            padding: 1rem;
+            border-radius: 50%;
+            z-index: 5;
+
+            i {
+              color: var(--whiteColor);
+              font-size: 1.5rem;
+              // transform: translateY(2.5px);
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+      .detailsBox:hover .imgDetails {
+        left: 0;
+      }
+
+      .detailsBox:hover .arrow i {
+        transform: rotate(-180deg);
+      }
+
+      .detailsBox:hover .imgBox img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// CLIENTS REVIEW=============================================================>
+
+.testimonial {
+  margin: 0 1rem 4rem;
+
+  .testimonialIntro {
+    text-align: center;
+    margin: 0 auto 1rem;
+
+    .subTitle {
+      color: var(--SemiDarkColor);
+      font-size: 18px;
+    }
+
+    .title {
+      color: var(--DarkColor);
+      font-size: 1.4rem;
+    }
+  }
+
+  .reviewContent {
+    .clientBox {
+      padding: 1rem;
+      background: var(--greyColor);
+      border-radius: 5px;
+
+      .text {
+        margin-bottom: 1rem;
+        p {
+          font-size: 15px;
+        }
+      }
+
+      .clientBio {
+        margin-top: 1rem;
+        display: flex;
+
+        .clientImg {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+        }
+
+        .clientInfo {
+          margin-left: 1rem;
+          max-width: max-content;
+          display: grid;
+          align-self: center;
+          justify-content: center;
+
+          .name {
+            font-size: 16px;
+            line-height: 1rem;
+            font-weight: 600;
+            color: var(--DarkColor);
+          }
+          .desc {
+            font-size: 13px;
+            line-height: 1rem;
+            color: var(--DarkColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+// MID BANNER SECTION CSS==========================>
+.midBanner {
+  .content {
+    display: grid;
+    grid-gap: 0;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .infoBox {
+      padding: 2rem;
+      background: url(./img/banner9.jpg);
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .dash {
+          height: 5px;
+          width: 20px;
+          background: var(--whiteColor);
+          border-radius: 3px;
+          bottom: 10%;
+        }
+
+        .rightDash {
+          margin-left: 0.5rem;
+        }
+
+        .leftDash {
+          margin-right: 0.5rem;
+        }
+
+        .subTitle {
+          color: var(--whiteColor);
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+      .title {
+        color: var(--whiteColor);
+        line-height: 1.8rem;
+        padding: 1rem 0;
+      }
+
+      p{
+        color: var(--whiteColor);
+        max-width: 600px;
+      }
+
+      .midBannerBtn {
+        background: transparent;
+        border: 2px solid var(--whiteColor);
+        outline: none;
+        margin: 1rem auto;
+
+        a {
+          color: var(--whiteColor);
+        }
+      }
+      .midBannerBtn:hover {
+        background: var(--whiteColor);
+      }
+      .midBannerBtn:hover a {
+        color: var(--DarkColor);
+      }
+    }
+  }
+}
+
+// FOOTER SECTION CSS====================================================>
+.footer {
+  background: url(./img/footerImage.jpg);
+  .content {
+    padding: 3rem 1.5rem 1.5rem;
+    row-gap: 2rem;
+
+    .dataDiv {
+      .footerTitle {
+        div {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 30px;
+            height: 30px;
+          }
+          .title {
+            line-height: 1rem;
+            margin-left: 1rem;
+          }
+        }
+
+        .title {
+          color: var(--DarkColor);
+          font-size: 15px;
+          position: relative;
+        }
+        .title::before {
+          position: absolute;
+          content: "";
+          height: 5px;
+          width: 100%;
+          background: var(--DarkColor);
+          top: -5px;
+          overflow: hidden;
+        }
+      }
+      .footerData {
+        margin-top: 0.5rem;
+      }
+
+      button {
+        margin-top: 0.5rem;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0.4rem 1rem;
+        background: transparent;
+        outline: none;
+        border: 1px solid var(--DarkColor);
+      }
+    }
+  }
+  .copyrightDiv {
+    padding: 1rem;
+    background: var(--DarkColor);
+    p {
+      color: var(--whiteColor);
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// ABOUT PAGE SCSS ================================================>
+
+.aboutPage {
+  .aboutBoxes {
+    margin-bottom: 1.5rem;
+    .aboutFirstSection {
+      background: var(--greyColor);
+      padding: 0.5rem 1rem;
+      .title {
+        color: var(--DarkColor);
+      }
+    }
+
+    .logoDiv {
+      background: var(--greyColor);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .fullLogo {
+        width: 250px;
+        transition: 0.4s;
+      }
+    }
+
+    .logoDiv:hover .fullLogo {
+      transform: scale(1.1);
+    }
+    .sideSection {
+      .documentsSection {
+        background: var(--greyColor);
+        border-top: 2px solid var(--DarkColor);
+        padding: 1rem;
+
+        .pdf {
+          padding: 2rem 1rem 1rem;
+          position: relative;
+          background: var(--DarkColor);
+          border-radius: 5px;
+          cursor: pointer;
+          a {
+            color: var(--whiteColor);
+            font-size: 0.9rem;
+          }
+
+          .tag {
+            position: absolute;
+            top: 0;
+            left: 10%;
+            background: var(--whiteColor);
+            color: var(--DarkColor);
+            padding: 2px;
+          }
+        }
+
+        .pdf:hover {
+          background: var(--SemiDarkColor);
+        }
+
+        .doc {
+          padding: 2rem 1rem 1rem;
+          position: relative;
+          background: var(--LightColor);
+          border-radius: 5px;
+          margin-top: 1rem;
+          cursor: pointer;
+          a {
+            color: var(--whiteColor);
+            font-size: 0.9rem;
+          }
+
+          .tag {
+            position: absolute;
+            top: 0;
+            left: 10%;
+            background: var(--whiteColor);
+            color: var(--DarkColor);
+            padding: 2px;
+          }
+        }
+      }
+
+      .doc:hover {
+        background: var(--SemiDarkColor);
+      }
+
+      .docDescSection {
+        background: var(--greyColor);
+        padding: 1rem;
+        border-top: 2px solid var(--DarkColor);
+        .title {
+          color: var(--DarkColor);
+          line-height: 1.3rem;
+          padding-bottom: 0.7rem;
+        }
+
+        p {
+          line-height: 1.3rem;
+          padding-bottom: 0.7rem;
+        }
+        a {
+          color: var(--DarkColor);
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .experienceDiv {
+    margin-bottom: 2rem;
+    padding: 3rem 1.5rem;
+    .txtDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      padding: 0 1rem;
+      p {
+        line-height: 1.4rem;
+      }
+    }
+
+    .imgDiv {
+      height: 500px;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+        border:10px solid rgb(243, 243, 243)
+      }
+    }
+  }
+
+  .membersRow {
+    margin-bottom: 2rem;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    .memberDiv {
+      display: grid;
+      gap: 0.5rem;
+      margin: auto;
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        align-items: center;
+        justify-self: center;
+      }
+
+      span {
+        text-align: center;
+        color: var(--DarkColor);
+        font-weight: 600;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+.introText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  .dash {
+    height: 2px;
+    width: 50px;
+    background: var(--DarkColor);
+    margin-right: 0.5rem;
+  }
+
+  p {
+    width: 100%;
+    max-width: 350px;
+    font-weight: 600;
+  }
+}
+.locationDiv {
+  margin: 2rem auto;
+  .locationInfo {
+    margin: auto;
+    .infoData {
+      border: 2px solid var(--DarkColor);
+      border-radius: 5px;
+      padding: 1rem;
+      text-align: center;
+
+      .dataTop {
+        span {
+          display: flex;
+          font-weight: 600;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem 0;
+
+          .locationIcon {
+            margin-left: 0.9rem;
+          }
+        }
+
+        h3 {
+          color: var(--DarkColor);
+        }
+
+        p {
+          padding: 0.5rem 0;
+        }
+      }
+
+      .dash {
+        height: 2px;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: var(--DarkColor);
+        margin: 1rem auto;
+      }
+
+      .dataBottom {
+        span {
+          display: flex;
+          font-weight: 600;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem 0;
+
+          .clockIcon {
+            margin-left: 0.9rem;
+          }
+        }
+
+        .contactBtn {
+          margin: 1rem auto;
+          background: var(--DarkColor);
+          border: 2px solid var(--DarkColor);
+
+          a {
+            color: var(--whiteColor);
+            font-weight: 600;
+          }
+        }
+
+        .contactBtn:hover {
+          background: transparent;
+          border: 2px solid var(--DarkColor);
+        }
+
+        .contactBtn:hover a {
+          color: var(--DarkColor);
+        }
+      }
+    }
+  }
+}
+
+.contactSectionBody {
+  margin: 2rem 1.5rem;
+}
+
+// CONTACT PAGE SCSS ===========================================================================>
+
+.contactForm {
+  margin: 2rem 0;
+
+  .formBg {
+    box-shadow: 0px 2px 10px var(--DarkColor);
+    border-radius: 15px;
+    padding: 0.5rem;
+
+    .contactCard {
+      background: var(--DarkColor);
+      position: relative;
+      border-radius: 15px;
+      padding: 0.6rem;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+
+      span {
+        display: block;
+        color: var(--whiteColor);
+        font-size: 16px;
+        font-weight: 600;
+        padding-bottom: 1rem;
+        text-align: center;
+      }
+
+      p {
+        color: var(--whiteColor);
+        font-size: 13px;
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+      }
+
+      .socialsDiv {
+        display: grid;
+        gap: 0.5rem;
+        margin: 1rem;
+        align-items: flex-start;
+
+        div {
+          display: flex;
+          justify-content: left;
+          margin: auto;
+
+          .socialDivIcon {
+            width: 20px;
+            height: 20px;
+            margin: auto;
+          }
+          span {
+            font-size: 12px;
+            font-weight: normal;
+          }
+
+          .socialDivIcon {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      .socialLinks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .socialIcon {
+          width: 20px;
+          height: 20px;
+          margin: 0 0.4rem;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+
+        .socialIcon:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+
+    .formDiv {
+      padding: 2rem;
+      label {
+        display: block;
+        color: var(--SemiDarkColor);
+        font-weight: 600;
+      }
+
+      .formData {
+        display: grid;
+        gap: 0.5rem;
+        input {
+          background: transparent;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid var(--SemiDarkColor);
+          padding: 7px;
+          height: 5px;
+          width: 90%;
+          font-size: 15px;
+        }
+      }
+
+      span {
+        display: block;
+        padding: 1rem 0;
+        color: var(--DarkColor);
+      }
+
+      .radioBtn {
+        margin-bottom: 1rem;
+        span {
+          display: flex;
+          align-items: center;
+          padding: 0.4rem;
+          input {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      .messageInput {
+        margin-bottom: 1rem;
+        input {
+          background: transparent;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid var(--SemiDarkColor);
+          padding: 7px;
+          height: 5px;
+          width: 90%;
+          font-size: 15px;
+        }
+      }
+
+      .cta,
+      button {
+        border: none;
+        outline: none;
+        color: var(--whiteColor);
+      }
+      .contactFormBtn {
+        background: var(--DarkColor);
+
+        button {
+          background: transparent;
+        }
+      }
+
+      .contactFormBtn:hover {
+        background: var(--LightColor);
+      }
+    }
+  }
+}
+
+// SERVICES SECTION PAGE SCSS =====================>
+
+.serviceBody {
+  margin: 2rem 1.5rem;
+
+  #serviceParagraph {
+    padding: 1rem 0;
+  }
+
+  .servicesSection {
+    background: var(--greyColor);
+    border-top: 2px solid var(--DarkColor);
+    padding: 0 1rem;
+    span {
+      padding: 1rem;
+    }
+
+    .serviceList {
+      padding: 1rem;
+    }
+
+    .bar {
+      padding: 0.7rem;
+      background: var(--darkGreyColor);
+      border-radius: 5px;
+
+      h4 {
+        font-weight: 600;
+        color: var(--DarkColor);
+        text-align: center;
+      }
+    }
+    .active {
+      background: var(--DarkColor);
+      h4 {
+        color: var(--whiteColor);
+      }
+    }
+
+    
+  }
+  .sideSection {
+    padding: 1rem;
+    display: none;
+    .documentsSection {
+      background: var(--greyColor);
+      border-top: 2px solid var(--DarkColor);
+      padding: 1rem;
+
+      .pdf {
+        padding: 2rem 1rem 1rem;
+        position: relative;
+        background: var(--DarkColor);
+        border-radius: 5px;
+        cursor: pointer;
+        a {
+          color: var(--whiteColor);
+          font-size: 0.9rem;
+        }
+
+        .tag {
+          position: absolute;
+          top: 0;
+          left: 10%;
+          background: var(--whiteColor);
+          color: var(--DarkColor);
+          padding: 2px;
+        }
+      }
+
+      .pdf:hover {
+        background: var(--SemiDarkColor);
+      }
+
+      .doc {
+        padding: 2rem 1rem 1rem;
+        position: relative;
+        background: var(--LightColor);
+        border-radius: 5px;
+        margin-top: 1rem;
+        cursor: pointer;
+        a {
+          color: var(--whiteColor);
+          font-size: 0.9rem;
+        }
+
+        .tag {
+          position: absolute;
+          top: 0;
+          left: 10%;
+          background: var(--whiteColor);
+          color: var(--DarkColor);
+          padding: 2px;
+        }
+      }
+    }
+
+    .doc:hover {
+      background: var(--SemiDarkColor);
+    }
+
+    .docDescSection {
+      background: var(--greyColor);
+      padding: 1rem;
+      border-top: 2px solid var(--DarkColor);
+      .title {
+        color: var(--DarkColor);
+        line-height: 1.3rem;
+        padding-bottom: 0.7rem;
+      }
+
+      p {
+        line-height: 1.3rem;
+        padding-bottom: 0.7rem;
+      }
+      a {
+        color: var(--DarkColor);
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .overview {
+    .overviewData {
+      div {
+        margin: auto;
+        padding: 1rem;
+        img {
+          width: 80px;
+          height: 80px;
+          margin: 1rem auto;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .benefits {
+    .benefitContainer {
+      padding: .5rem 1rem 1rem;
+      border: 2px solid var(--DarkColor);
+      margin: 2rem auto;
+      transition: height .3s;
+      height: 76px;
+      overflow: hidden;
+
+      .title {
+        display: flex;
+        padding: 1rem 0;
+        font-weight: 600;
+        align-items: center;
+        justify-content: space-between;
+        #symbol {
+          background: var(--DarkColor);
+          padding: 5px;
+          color: var(--whiteColor);
+          height: 20px;
+          width: 20px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    #symbol{
+      cursor: pointer;
+    }
+    .benefitClose{
+      
+     height: max-content;
+   }
+  }
+
+  .serviceContent {
+    .imagesDivv {
+      div {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+// MEDIA QUERRIES /////////////////////////////////////////////////////////
+@media screen and (min-width: 460px){
+  .project {
+    .imgBox {
+      height: 300px;
+      width: 600px;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .homeTitle {
+    font-size: 3.5rem;
+    padding: 1.5rem 0;
+    line-height: 3rem;
+  }
+  .subTitle {
+    max-width: 600px !important;
+    text-align: center !important;
+    padding-bottom: 1.5rem !important;
+    font-size: 1.1rem !important;
+  }
+ 
+  .servicesSides {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sideSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .introText {
+    p {
+      max-width: 500px;
+    }
+  }
+
+  .membersRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    .content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .overviewData {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .serviceContent {
+    .imagesDivv {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+//// MIN WIDTH 8PX ////////////////////////////////////////////////////////////
+
+@media screen and (min-width: 678px) {
+  .intro__Section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projectContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .first,
+  .second {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// MIN WIDTH 768PX ////////////////////////////////////////////////////////////
+
+@media screen and (min-width: 768px) {
+  .closeIcon {
+    display: none;
+  }
+  .homeTitle {
+    line-height: 4rem !important;
+  }
+
+  .navFooter {
+    display: none;
+  }
+  .navItem {
+    display: inline-block;
+  }
+  .navToggle {
+    display: none;
+  }
+  .navLink {
+    color: var(--whiteColor);
+    margin: 0 0.5rem;
+  }
+
+  .navLink:hover {
+    font-weight: bold;
+  }
+  .intro__Section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .aboutContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutImg {
+    height: 100%;
+  }
+
+  .locationDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .membersRow {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 6rem 10rem !important;
+  }
+
+  .overviewData {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .serviceContent {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+// MAX WIDTH 960PX ////////////////////////////////////////////////////////////////////
+@media screen and (min-width: 960px) {
+  .embbedMap{
+    max-width: 650px !important;
+  }
+  .serviceContainer {
+    grid-template-columns: repeat(2, 1fr);
+    .servicesSides {
+      display: initial;
+      .sideTop {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .subTitle {
+      font-size: 22px;
+    }
+
+    .Title {
+      font-size: 2.6rem;
+      font-weight: 600;
+      line-height: 1.2rem;
+    }
+    .serviceBody {
+      margin-top: 9rem !important;
+    }
+  }
+  .serviceContent {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .project {
+    .subTitle {
+      font-size: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-size: 20px;
+    }
+    .imgBox {
+      height: 300px;
+      width: 550px;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .imgDetails {
+      p {
+        max-width: 200px;
+        font-size: 16px;
+        line-height: 1.1rem;
+      }
+    }
+  }
+
+  .testimonial {
+    margin: 2rem 1rem 5rem;
+    .subTitle {
+      font-size: 1.4rem;
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+    .text {
+      margin-bottom: 1rem;
+      p {
+        font-size: 17px;
+      }
+    }
+    .name {
+      font-size: 18px;
+      line-height: 1rem;
+    }
+    .desc {
+      font-size: 16px;
+      line-height: 1rem;
+    }
+  }
+
+  .midBanner {
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .aboutBoxes {
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    justify-content: space-evenly;
+    .sideSection {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .experienceDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .formBg {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .contactCard {
+    padding: 4rem 0.6rem;
+  }
+
+  .navItem {
+    margin: 0 1rem;
+  }
+}
+
+// MIN WIDTH 1024PX //////////////////////////////////////////////////////////////////////
+@media screen and (min-width: 1024px) {
+  .footer {
+    .content {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+    }
+  }
+
+  .contactCard {
+    span {
+      font-size: 18px !important;
+      padding-bottom: 2rem !important;
+    }
+    p {
+      font-size: 15px !important;
+    }
+    div {
+      .socialDivIcon {
+        width: 30px !important;
+        height: 30px !important;
+      }
+      span {
+        font-size: 15px !important;
+      }
+    }
+    .socialIcon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .header {
+    padding: 1rem 5rem;
+  }
+
+  .serviceContainer {
+    grid-template-columns: 2fr 1fr;
+    .serviceBody {
+      margin-top: 9rem !important;
+
+      p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+      }
+
+      h3 {
+        font-size: 2.1rem;
+        padding: 1.5rem 0 0.5rem;
+      }
+    }
+  }
+
+  .overviewData {
+    padding: 0 4rem;
+    div {
+      padding: 3rem !important;
+    }
+  }
+
+  .finalPadding {
+    padding: 2rem 4rem;
+  }
+
+  .dataTop {
+    p {
+      max-width: 300px;
+    }
+  }
+
+  .benefits {
+    .finalPadding {
+      padding: 2rem 15rem !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .sidePadding {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .reviewContent {
+    width: 60%;
+    margin: auto;
+  }
+
+  .header {
+    padding: 1rem 8rem;
+    .logo {
+      width: 50px
+    }
+    .btn {
+      padding: 0.5rem 1.5rem;
+      a {
+        font-size: 1rem;
+          }
+    }
+  }
+
+  .navLink {
+    border-bottom: 1px dashed var(--whiteColor);
+  }
+
+ 
+}
+
+@media screen and (min-width: 1440px) {
+  .intro__Section {
+    padding: 6rem;
+  }
+
+  
+  .homeTitle {
+    font-size: 4.5rem !important;
+    padding: 1.5rem 0 ;
+    line-height: 5rem !important;
+  }
+  .contactForm {
+    .finalPadding {
+      padding: 4rem 6rem !important;
+    }
+
+    .formDiv {
+      .names,
+      .formContact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  .faqSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .serviceContent{
+    align-items: center !important;
+  }
+  .servicesContainer{
+    .content{
+      p{
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  .dataTop {
+    p {
+      max-width: 450px;
+    }
+  }
+
+  .about {
+    padding: 3rem 6rem;
+  }
+}
+
+// SCROLL BAR=============================>
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--greyColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--LightColor);
+  border-radius: 10px;
+  width: 100%;
+  height:4px;
+}

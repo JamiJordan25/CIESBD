@@ -2198,6 +2198,7 @@ p {
 /* ^04/11/2024  */
 
 /* New button styles */
+
 .buttonContainer {
     display: flex;
     justify-content: center; /* Center button */
@@ -2206,17 +2207,11 @@ p {
 
 .serviceBtn {
     background-color: #808080; /* Gray background */
-    color: white; /* White text color */
+    color: black; /* Black text color */
     padding: 0.5rem 1rem;
     text-decoration: none;
     border: 2px solid #808080; /* Same color for the border */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-}
-
-.serviceBtn:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Light background on hover */
-    color: #808080; /* Change text color to gray on hover */
 }
 
 

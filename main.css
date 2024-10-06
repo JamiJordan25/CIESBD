@@ -2197,6 +2197,11 @@ p {
 } */
 /* ^04/11/2024  */
 
+.subTitle ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
 .subTitle li {
     display: flex; /* Align items in a row */
     align-items: center; /* Center the button vertically */

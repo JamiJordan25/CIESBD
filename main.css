@@ -2205,14 +2205,15 @@ p {
     margin-top: 0.5rem; /* Space between the service name and the button */
 }
 
-.serviceBtn {
-    background-color: #808080; /* Gray background */
+..serviceBtn {
+    background-color: #ADD8E6; /* Baby blue background */
     color: black; /* Black text color */
     padding: 0.5rem 1rem;
     text-decoration: none;
-    border: 2px solid #808080; /* Same color for the border */
+    border: 2px solid #ADD8E6; /* Same color for the border */
     border-radius: 5px; /* Rounded corners */
 }
+
 
 
 

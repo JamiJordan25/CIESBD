@@ -2214,10 +2214,10 @@ p {
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-.serviceBtn:hover {
+/* .serviceBtn:hover {
     background-color: rgba(255, 255, 255, 0.8); /* Light background on hover */
     color: #000; /* Keep text color on hover or change if needed */
-}
+} */
 
 
 

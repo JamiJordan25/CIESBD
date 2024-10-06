@@ -2205,15 +2205,18 @@ p {
 }
 
 .serviceBtn {
-    background-color: var(--whiteColor); /* Adjust color as needed */
-    color: var(--darkColor); /* Adjust text color */
+    background-color: transparent; /* Initial transparent background */
+    color: var(--darkColor); /* Text color of the button */
     padding: 0.5rem 1rem;
     text-decoration: none;
+    border: 2px solid var(--darkColor); /* Border color for visibility */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
 }
 
 .serviceBtn:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Change on hover */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color on hover */
+    color: var(--darkColor); /* Text color on hover, can be adjusted if needed */
 }
+
 

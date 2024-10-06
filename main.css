@@ -2204,20 +2204,21 @@ p {
     margin-top: 0.5rem; /* Space between the service name and the button */
 }
 
-.serviceBtn {   
-    background-color: #808080; /* Transparent background */
-    color: #808080; /
+.serviceBtn {
+    background-color: #808080; /* Gray background */
+    color: white; /* White text color */
     padding: 0.5rem 1rem;
     text-decoration: none;
-    border: 2px solid #000; /* Border for visibility */
-    border-radius: 5px;
+    border: 2px solid #808080; /* Same color for the border */
+    border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-/* .serviceBtn:hover {
+.serviceBtn:hover {
     background-color: rgba(255, 255, 255, 0.8); /* Light background on hover */
-    color: #000; /* Keep text color on hover or change if needed */
-} */
+    color: #808080; /* Change text color to gray on hover */
+}
+
 
 
 

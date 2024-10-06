@@ -2200,9 +2200,8 @@ p {
 /* New button styles */
 .buttonContainer {
     display: flex;
-    justify-content: center;
-    gap: 1rem; /* Adds space between buttons */
-    margin-top: 1rem; /* Adds space above the buttons */
+    justify-content: center; /* Center button */
+    margin-top: 0.5rem; /* Space between the service name and the button */
 }
 
 .serviceBtn {
@@ -2217,3 +2216,4 @@ p {
 .serviceBtn:hover {
     background-color: rgba(255, 255, 255, 0.8); /* Change on hover */
 }
+

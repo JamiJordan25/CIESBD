@@ -2200,27 +2200,26 @@ p {
 .subTitle ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
+    margin: 0; /* Remove default margin */
 }
 
 .subTitle li {
     display: flex; /* Align items in a row */
     align-items: center; /* Center the button vertically */
-    justify-content: space-between; /* Space out text and button */
+    justify-content: flex-start; /* Align items to the start */
     margin: 0.5em 0; /* Space between list items */
+    gap: 10px; /* Space between text and button */
 }
 
 .serviceBtn {
-    margin-left: 10px; /* Space between the text and the button */
     background-color: #007BFF; /* Button background color */
     color: white; /* Button text color */
     padding: 0.5em 1em; /* Button padding */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s; /* Smooth background color transition */
-    flex-shrink: 0; /* Prevent button from shrinking */
 }
 
 .serviceBtn:hover {
     background-color: #0056b3; /* Darker color on hover */
 }
-

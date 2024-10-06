@@ -2204,9 +2204,9 @@ p {
     margin-top: 0.5rem; /* Space between the service name and the button */
 }
 
-.serviceBtn {
-/*     background-color: transparent; /* Transparent background */ */
-    color: #000; /* Use a contrasting color for visibility (e.g., black) */
+.serviceBtn {   
+    background-color: #808080; /* Transparent background */
+    color: #808080; /
     padding: 0.5rem 1rem;
     text-decoration: none;
     border: 2px solid #000; /* Border for visibility */

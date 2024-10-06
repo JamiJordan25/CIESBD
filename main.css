@@ -2205,7 +2205,7 @@ p {
 }
 
 .serviceBtn {
-    background-color: transparent; /* Transparent background */
+/*     background-color: transparent; /* Transparent background */ */
     color: #000; /* Use a contrasting color for visibility (e.g., black) */
     padding: 0.5rem 1rem;
     text-decoration: none;

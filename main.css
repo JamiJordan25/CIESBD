@@ -2197,29 +2197,23 @@ p {
 } */
 /* ^04/11/2024  */
 
-.subTitle ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove default margin */
-}
-
-.subTitle li {
-    display: flex; /* Align items in a row */
-    align-items: center; /* Center the button vertically */
-    justify-content: flex-start; /* Align items to the start */
-    margin: 0.5em 0; /* Space between list items */
-    gap: 10px; /* Space between text and button */
+/* New button styles */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Adds space between buttons */
+    margin-top: 1rem; /* Adds space above the buttons */
 }
 
 .serviceBtn {
-    background-color: #007BFF; /* Button background color */
-    color: white; /* Button text color */
-    padding: 0.5em 1em; /* Button padding */
-    text-decoration: none; /* Remove underline */
+    background-color: var(--whiteColor); /* Adjust color as needed */
+    color: var(--darkColor); /* Adjust text color */
+    padding: 0.5rem 1rem;
+    text-decoration: none;
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth background color transition */
+    transition: background-color 0.3s;
 }
 
 .serviceBtn:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: rgba(255, 255, 255, 0.8); /* Change on hover */
 }

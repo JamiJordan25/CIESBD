@@ -1,7 +1,7 @@
 const imagesData = [
 
     {
-        src: 'img/2/doesi.jpg',
+        src: 'img2/2/doesi.jpg',
         title: 'Title for Image 2',
         text: 'Text for image 2',
         listItems: [
@@ -10,7 +10,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/2/katorci.jpg',
+        src: 'img2/2/katorci.jpg',
         title: 'Title for Image 3',
         text: 'Text for image 3',
         listItems: [
@@ -19,7 +19,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/2/och.jpg',
+        src: 'img2/2/och.jpg',
         title: 'Title for Image 4',
         text: 'Text for image 4',
         listItems: [
@@ -28,7 +28,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/2/unoNuno1(rr).jpg',
+        src: 'img2/2/unoNuno1(rr).jpg',
         title: 'Title for Image 4',
         text: 'Text for image 4',
         listItems: [
@@ -37,7 +37,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/2/tracy.jpg',
+        src: 'img2/2/tracy.jpg',
         title: 'Title for Image 5',
         text: 'Text for image 5',
         listItems: [
@@ -46,7 +46,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/2/cincc1.jpg',
+        src: 'img2/2/cincc1.jpg',
         title: 'Title for Image 6',
         text: 'Text for image 6',
         listItems: [
@@ -55,7 +55,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/2/does1.jpg',
+        src: 'img2/2/does1.jpg',
         title: 'Title for Image 8',
         text: 'Text for image 8',
         listItems: [
@@ -64,7 +64,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/2/does2.jpg',
+        src: 'img2/2/does2.jpg',
         title: 'Title for Image 9',
         text: 'Text for image 9',
         listItems: [
@@ -73,7 +73,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/2/quat1.jpg',
+        src: 'img2/2/quat1.jpg',
         title: 'Title for Image 13',
         text: 'Text for image 13',
         listItems: [
@@ -82,7 +82,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/2/Quat2.jpg',
+        src: 'img2/2/Quat2.jpg',
         title: 'Title for Image 14',
         text: 'Text for image 14',
         listItems: [

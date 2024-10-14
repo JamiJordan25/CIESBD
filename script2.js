@@ -1,14 +1,5 @@
 const imagesData = [
-    {
-        src: 'img/unoNuno1(rr).jpg',
-        title: 'Learn to Code With an Updated, Modern Curriculum',
-        text: 'Text for image 1',
-        listItems: [
-            'Learn to solve common algorithms used in technical interviews.',
-            'Benefit from learner support available 24/7, 365 days a year.',
-            'Connect with instructors, assistants, and peers for full support.'
-        ]
-    },
+
     {
         src: 'img/2/doesi.jpg',
         title: 'Title for Image 2',
@@ -37,6 +28,15 @@ const imagesData = [
         ]
     },
     {
+        src: 'img/2/unoNuno1(rr).jpg',
+        title: 'Title for Image 4',
+        text: 'Text for image 4',
+        listItems: [
+            'Detail about image 4.',
+            'Another point about image 4.'
+        ]
+    },
+    {
         src: 'img/2/tracy.jpg',
         title: 'Title for Image 5',
         text: 'Text for image 5',
@@ -46,7 +46,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/cincc1.jpg',
+        src: 'img/2/cincc1.jpg',
         title: 'Title for Image 6',
         text: 'Text for image 6',
         listItems: [
@@ -55,16 +55,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/dais.jpg',
-        title: 'Title for Image 7',
-        text: 'Text for image 7',
-        listItems: [
-            'Detail about image 7.',
-            'Another point about image 7.'
-        ]
-    },
-    {
-        src: 'img/does1.jpg',
+        src: 'img/2/does1.jpg',
         title: 'Title for Image 8',
         text: 'Text for image 8',
         listItems: [
@@ -73,7 +64,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/does2.jpg',
+        src: 'img/2/does2.jpg',
         title: 'Title for Image 9',
         text: 'Text for image 9',
         listItems: [
@@ -82,34 +73,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/kinsay.jpg',
-        title: 'Title for Image 10',
-        text: 'Text for image 10',
-        listItems: [
-            'Detail about image 10.',
-            'Another point about image 10.'
-        ]
-    },
-    {
-        src: 'img/nuWav.jpg',
-        title: 'Title for Image 11',
-        text: 'Text for image 11',
-        listItems: [
-            'Detail about image 11.',
-            'Another point about image 11.'
-        ]
-    },
-    {
-        src: 'img/ounci.jpg',
-        title: 'Title for Image 12',
-        text: 'Text for image 12',
-        listItems: [
-            'Detail about image 12.',
-            'Another point about image 12.'
-        ]
-    },
-    {
-        src: 'img/quat1.jpg',
+        src: 'img/2/quat1.jpg',
         title: 'Title for Image 13',
         text: 'Text for image 13',
         listItems: [
@@ -118,7 +82,7 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/Quat2.jpg',
+        src: 'img/2/Quat2.jpg',
         title: 'Title for Image 14',
         text: 'Text for image 14',
         listItems: [
@@ -126,33 +90,7 @@ const imagesData = [
             'Another point about image 14.'
         ]
     },
-    {
-        src: 'img/sais.jpg',
-        title: 'Title for Image 15',
-        text: 'Text for image 15',
-        listItems: [
-            'Detail about image 15.',
-            'Another point about image 15.'
-        ]
-    },
-    {
-        src: 'img/saysi.jpg',
-        title: 'Title for Image 16',
-        text: 'Text for image 16',
-        listItems: [
-            'Detail about image 16.',
-            'Another point about image 16.'
-        ]
-    },
-    {
-        src: 'img/siatay.jpg',
-        title: 'Title for Image 17',
-        text: 'Text for image 17',
-        listItems: [
-            'Detail about image 17.',
-            'Another point about image 17.'
-        ]
-    },
+    
     // Add more images as needed
 ];
 

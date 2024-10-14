@@ -1,15 +1,5 @@
 const imagesData = [
     {
-        src: 'img/unoNuno1(rr).jpg',
-        title: 'Learn to Code With an Updated, Modern Curriculum',
-        text: 'Text for image 1',
-        listItems: [
-            'Learn to solve common algorithms used in technical interviews.',
-            'Benefit from learner support available 24/7, 365 days a year.',
-            'Connect with instructors, assistants, and peers for full support.'
-        ]
-    },
-    {
         src: 'img/18.jpg',
         title: 'Title for Image 2',
         text: 'Text for image 2',
@@ -46,39 +36,12 @@ const imagesData = [
         ]
     },
     {
-        src: 'img/cincc1.jpg',
-        title: 'Title for Image 6',
-        text: 'Text for image 6',
-        listItems: [
-            'Detail about image 6.',
-            'Another point about image 6.'
-        ]
-    },
-    {
         src: 'img/dais.jpg',
         title: 'Title for Image 7',
         text: 'Text for image 7',
         listItems: [
             'Detail about image 7.',
             'Another point about image 7.'
-        ]
-    },
-    {
-        src: 'img/does1.jpg',
-        title: 'Title for Image 8',
-        text: 'Text for image 8',
-        listItems: [
-            'Detail about image 8.',
-            'Another point about image 8.'
-        ]
-    },
-    {
-        src: 'img/does2.jpg',
-        title: 'Title for Image 9',
-        text: 'Text for image 9',
-        listItems: [
-            'Detail about image 9.',
-            'Another point about image 9.'
         ]
     },
     {
@@ -106,24 +69,6 @@ const imagesData = [
         listItems: [
             'Detail about image 12.',
             'Another point about image 12.'
-        ]
-    },
-    {
-        src: 'img/quat1.jpg',
-        title: 'Title for Image 13',
-        text: 'Text for image 13',
-        listItems: [
-            'Detail about image 13.',
-            'Another point about image 13.'
-        ]
-    },
-    {
-        src: 'img/Quat2.jpg',
-        title: 'Title for Image 14',
-        text: 'Text for image 14',
-        listItems: [
-            'Detail about image 14.',
-            'Another point about image 14.'
         ]
     },
     {

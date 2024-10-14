@@ -1,0 +1,98 @@
+* {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    color: cyan; 
+    font-family: Arial, sans-serif;
+    background-image: url('./img/reckDONEDARK.png');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    position: relative; /* Optional for positioning context */
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .image-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .text-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .text-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .scroll-container {
+    width: 100%;
+    overflow: hidden; /* Hide scrollbar */
+  }
+  
+  .thumbnail-gallery {
+    display: flex;
+    transition: transform 0.3s ease; /* Smooth transition */
+    white-space: nowrap;
+  }
+  
+  .thumbnail-gallery img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+  }
+  
+  .thumbnail-gallery img:hover {
+    border: 2px solid orange;
+  }
+  .splide__slide {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+/* .bannerImg {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+} */
+  

@@ -1,11 +1,11 @@
 const imagesData = [
     {
         src: 'img/18.jpg',
-        title: 'Title for Image 2',
-        text: 'Text for image 2',
+        title: 'IT School activity',
+        // text: 'Text for image 2',
         listItems: [
-            'Detail about image 2.',
-            'Another point about image 2.'
+            // 'Detail about image 2.',
+            // 'Another point about image 2.'
         ]
     },
     {

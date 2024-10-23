@@ -2,92 +2,92 @@ const imagesData = [
 
     {
         src: 'img2/2/doesi.jpg',
-        title: 'Title for Image 2',
-        text: 'Text for image 2',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 2.',
-            'Another point about image 2.'
+            //'Detail about image 2.',
+            //'Another point about image 2.'
         ]
     },
     {
         src: 'img2/2/katorci.jpg',
-        title: 'Title for Image 3',
-        text: 'Text for image 3',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 3.',
-            'Another point about image 3.'
+            //'Detail about image 3.',
+            //'Another point about image 3.'
         ]
     },
     {
         src: 'img2/2/och.jpg',
-        title: 'Title for Image 4',
-        text: 'Text for image 4',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 4.',
-            'Another point about image 4.'
+            //'Detail about image 4.',
+            //'Another point about image 4.'
         ]
     },
     {
         src: 'img2/2/unoNuno1(rr).jpg',
-        title: 'Title for Image 4',
-        text: 'Text for image 4',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 4.',
-            'Another point about image 4.'
+            //'Detail about image 4.',
+            //'Another point about image 4.'
         ]
     },
     {
         src: 'img2/2/tracy.jpg',
-        title: 'Title for Image 5',
-        text: 'Text for image 5',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 5.',
-            'Another point about image 5.'
+            //'Detail about image 5.',
+            //'Another point about image 5.'
         ]
     },
     {
         src: 'img2/2/cincc1.jpg',
-        title: 'Title for Image 6',
-        text: 'Text for image 6',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 6.',
-            'Another point about image 6.'
+            //'Detail about image 6.',
+            //'Another point about image 6.'
         ]
     },
     {
         src: 'img2/2/does1.jpg',
-        title: 'Title for Image 8',
-        text: 'Text for image 8',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 8.',
-            'Another point about image 8.'
+            //'Detail about image 8.',
+            //'Another point about image 8.'
         ]
     },
     {
         src: 'img2/2/does2.jpg',
-        title: 'Title for Image 9',
-        text: 'Text for image 9',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 9.',
-            'Another point about image 9.'
+            //'Detail about image 9.',
+            //'Another point about image 9.'
         ]
     },
     {
         src: 'img2/2/quat1.jpg',
-        title: 'Title for Image 13',
-        text: 'Text for image 13',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 13.',
-            'Another point about image 13.'
+            //'Detail about image 13.',
+            //'Another point about image 13.'
         ]
     },
     {
         src: 'img2/2/Quat2.jpg',
-        title: 'Title for Image 14',
-        text: 'Text for image 14',
+        title: 'Trade School activity',
+        text: 'at CIESBD Trade School',
         listItems: [
-            'Detail about image 14.',
-            'Another point about image 14.'
+            //'Detail about image 14.',
+            //'Another point about image 14.'
         ]
     },
     

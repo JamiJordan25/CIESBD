@@ -11,7 +11,7 @@ const imagesData = [
     {
         src: 'img/17.jpg',
         title: 'IT School activity',
-        text: 'at CIESBD IT
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 3.',
             'Another point about image 3.'
@@ -20,7 +20,7 @@ const imagesData = [
     {
         src: 'img/19.jpg',
         title: 'IT School activity',
-        text: 'at CIESBD IT
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 4.',
             'Another point about image 4.'
@@ -28,8 +28,8 @@ const imagesData = [
     },
     {
         src: 'img/20.jpg',
-        title: 'Title for Image 5',
-        text: 'Text for image 5',
+        title: 'IT School activity',
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 5.',
             'Another point about image 5.'
@@ -37,8 +37,8 @@ const imagesData = [
     },
     {
         src: 'img/dais.jpg',
-        title: 'Title for Image 7',
-        text: 'Text for image 7',
+        title: 'IT School activity',
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 7.',
             'Another point about image 7.'
@@ -46,8 +46,8 @@ const imagesData = [
     },
     {
         src: 'img/kinsay.jpg',
-        title: 'Title for Image 10',
-        text: 'Text for image 10',
+        title: 'IT School activity',
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 10.',
             'Another point about image 10.'
@@ -55,8 +55,8 @@ const imagesData = [
     },
     {
         src: 'img/nuWav.jpg',
-        title: 'Title for Image 11',
-        text: 'Text for image 11',
+        title: 'IT School activity',
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 11.',
             'Another point about image 11.'
@@ -64,8 +64,8 @@ const imagesData = [
     },
     {
         src: 'img/ounci.jpg',
-        title: 'Title for Image 12',
-        text: 'Text for image 12',
+        title: 'IT School activity',
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 12.',
             'Another point about image 12.'
@@ -73,8 +73,8 @@ const imagesData = [
     },
     {
         src: 'img/sais.jpg',
-        title: 'Title for Image 15',
-        text: 'Text for image 15',
+        title: 'IT School activity',
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 15.',
             'Another point about image 15.'
@@ -82,8 +82,8 @@ const imagesData = [
     },
     {
         src: 'img/saysi.jpg',
-        title: 'Title for Image 16',
-        text: 'Text for image 16',
+        title: 'IT School activity',
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 16.',
             'Another point about image 16.'
@@ -91,8 +91,8 @@ const imagesData = [
     },
     {
         src: 'img/siatay.jpg',
-        title: 'Title for Image 17',
-        text: 'Text for image 17',
+        title: 'IT School activity',
+        text: 'at CIESBD IT',
         listItems: [
             'Detail about image 17.',
             'Another point about image 17.'

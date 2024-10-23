@@ -2,7 +2,7 @@ const imagesData = [
     {
         src: 'img/18.jpg',
         title: 'IT School activity',
-        // text: 'Text for image 2',
+        text: 'at CIESBD IT',
         listItems: [
             // 'Detail about image 2.',
             // 'Another point about image 2.'
@@ -10,8 +10,8 @@ const imagesData = [
     },
     {
         src: 'img/17.jpg',
-        title: 'Title for Image 3',
-        text: 'Text for image 3',
+        title: 'IT School activity',
+        text: 'at CIESBD IT
         listItems: [
             'Detail about image 3.',
             'Another point about image 3.'
@@ -19,8 +19,8 @@ const imagesData = [
     },
     {
         src: 'img/19.jpg',
-        title: 'Title for Image 4',
-        text: 'Text for image 4',
+        title: 'IT School activity',
+        text: 'at CIESBD IT
         listItems: [
             'Detail about image 4.',
             'Another point about image 4.'

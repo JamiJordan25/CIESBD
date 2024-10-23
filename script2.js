@@ -1,12 +1,12 @@
 const imagesData = [
 
     {
-        src: 'img2/2/doesi.jpg',
+        src: 'img2/2/tracy.jpg',
         title: 'Trade School activity',
         text: 'at CIESBD Trade School',
         listItems: [
-            //'Detail about image 2.',
-            //'Another point about image 2.'
+            //'Detail about image 5.',
+            //'Another point about image 5.'
         ]
     },
     {

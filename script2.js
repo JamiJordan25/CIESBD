@@ -37,15 +37,6 @@ const imagesData = [
         ]
     },
     {
-        src: 'img2/2/tracy.jpg',
-        title: 'Trade School activity',
-        text: 'at CIESBD Trade School',
-        listItems: [
-            //'Detail about image 5.',
-            //'Another point about image 5.'
-        ]
-    },
-    {
         src: 'img2/2/cincc1.jpg',
         title: 'Trade School activity',
         text: 'at CIESBD Trade School',
